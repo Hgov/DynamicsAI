@@ -1,0 +1,17 @@
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\bin\Release\net8.0\DynamicsAI.Infrastructure.deps.json
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\bin\Release\net8.0\DynamicsAI.Infrastructure.dll
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\bin\Release\net8.0\DynamicsAI.Infrastructure.pdb
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\bin\Release\net8.0\DynamicsAI.Application.dll
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\bin\Release\net8.0\DynamicsAI.Domain.dll
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\bin\Release\net8.0\DynamicsAI.Application.pdb
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\bin\Release\net8.0\DynamicsAI.Domain.pdb
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\obj\Release\net8.0\DynamicsAI.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\obj\Release\net8.0\DynamicsAI.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\obj\Release\net8.0\DynamicsAI.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\obj\Release\net8.0\DynamicsAI.Infrastructure.AssemblyInfo.cs
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\obj\Release\net8.0\DynamicsAI.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\obj\Release\net8.0\Dynamics.CAE44089.Up2Date
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\obj\Release\net8.0\DynamicsAI.Infrastructure.dll
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\obj\Release\net8.0\refint\DynamicsAI.Infrastructure.dll
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\obj\Release\net8.0\DynamicsAI.Infrastructure.pdb
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\obj\Release\net8.0\ref\DynamicsAI.Infrastructure.dll

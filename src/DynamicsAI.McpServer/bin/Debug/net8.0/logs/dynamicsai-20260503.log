@@ -1,0 +1,39 @@
+2026-05-03 13:29:07.358 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) transport reading messages.
+2026-05-03 13:29:07.422 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-03 13:29:07.422 +03:00 [INF] Hosting environment: Production
+2026-05-03 13:29:07.422 +03:00 [INF] Content root path: C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.McpServer\bin\Debug\net8.0\
+2026-05-03 13:29:07.434 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0) method 'initialize' request handler called.
+2026-05-03 13:29:07.457 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/list' request handler called.
+2026-05-03 13:29:07.458 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'initialize' request handler completed in 20.9928ms.
+2026-05-03 13:29:07.467 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/list' request handler completed in 8.6209ms.
+2026-05-03 13:30:04.232 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler called.
+2026-05-03 13:30:04.251 +03:00 [ERR] "dynamics_execute_query" threw an unhandled exception.
+System.InvalidOperationException: tenant_context sağlanmadı ve sunucuda varsayılan tenant yapılandırılmamış. appsettings.json > DynamicsAI:DefaultTenant bölümünü doldurun.
+   at DynamicsAI.McpServer.Tools.QueryTool.ResolveRequest(QueryRequest request, DefaultTenantOptions opts) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.McpServer\Tools\QueryTool.cs:line 82
+   at DynamicsAI.McpServer.Tools.QueryTool.ExecuteQuery(ExecuteQueryUseCase useCase, DefaultTenantOptions defaultTenant, AuditLogger auditLogger, QueryRequest request, CancellationToken cancellationToken) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.McpServer\Tools\QueryTool.cs:line 31
+   at Microsoft.Extensions.AI.AIFunctionFactory.ReflectionAIFunctionDescriptor.<>c__DisplayClass35_1.<<GetReturnParameterMarshaller>b__10>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.Extensions.AI.AIFunctionFactory.ReflectionAIFunction.InvokeCoreAsync(AIFunctionArguments arguments, CancellationToken cancellationToken)
+   at Microsoft.Extensions.AI.AIFunctionFactory.ReflectionAIFunction.InvokeCoreAsync(AIFunctionArguments arguments, CancellationToken cancellationToken)
+   at ModelContextProtocol.Server.AIFunctionMcpServerTool.InvokeAsync(RequestContext`1 request, CancellationToken cancellationToken)
+   at ModelContextProtocol.Server.McpServerImpl.<>c__DisplayClass51_1.<<ConfigureTools>b__4>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ModelContextProtocol.Server.McpServerImpl.<>c__DisplayClass51_2.<<ConfigureTools>b__5>d.MoveNext()
+2026-05-03 13:30:04.268 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler completed in 35.8963ms.
+2026-05-03 13:30:05.831 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler called.
+2026-05-03 13:30:05.834 +03:00 [ERR] "dynamics_get_metadata" threw an unhandled exception.
+System.InvalidOperationException: tenant_context sağlanmadı ve sunucuda varsayılan tenant yapılandırılmamış.
+   at DynamicsAI.McpServer.Tools.MetadataTool.GetMetadata(GetMetadataUseCase useCase, DefaultTenantOptions defaultTenant, AuditLogger auditLogger, TenantContext tenantContext, Boolean forceRefresh, CancellationToken cancellationToken) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.McpServer\Tools\MetadataTool.cs:line 27
+   at Microsoft.Extensions.AI.AIFunctionFactory.ReflectionAIFunctionDescriptor.<>c__DisplayClass35_1.<<GetReturnParameterMarshaller>b__10>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.Extensions.AI.AIFunctionFactory.ReflectionAIFunction.InvokeCoreAsync(AIFunctionArguments arguments, CancellationToken cancellationToken)
+   at Microsoft.Extensions.AI.AIFunctionFactory.ReflectionAIFunction.InvokeCoreAsync(AIFunctionArguments arguments, CancellationToken cancellationToken)
+   at ModelContextProtocol.Server.AIFunctionMcpServerTool.InvokeAsync(RequestContext`1 request, CancellationToken cancellationToken)
+   at ModelContextProtocol.Server.McpServerImpl.<>c__DisplayClass51_1.<<ConfigureTools>b__4>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ModelContextProtocol.Server.McpServerImpl.<>c__DisplayClass51_2.<<ConfigureTools>b__5>d.MoveNext()
+2026-05-03 13:30:05.835 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler completed in 3.8139ms.
+2026-05-03 13:31:49.234 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) transport completed reading messages.
+2026-05-03 13:31:49.240 +03:00 [INF] Application is shutting down...
+2026-05-03 13:31:49.246 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) shutting down.
+2026-05-03 13:31:49.246 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) shut down.

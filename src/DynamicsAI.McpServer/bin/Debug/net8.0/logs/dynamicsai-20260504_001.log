@@ -1,0 +1,360 @@
+2026-05-04 10:43:16.509 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) transport reading messages.
+2026-05-04 10:43:16.573 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-04 10:43:16.574 +03:00 [INF] Hosting environment: Production
+2026-05-04 10:43:16.574 +03:00 [INF] Content root path: C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.McpServer\bin\Debug\net8.0\
+2026-05-04 10:43:16.585 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0) method 'initialize' request handler called.
+2026-05-04 10:43:16.613 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'initialize' request handler completed in 25.9116ms.
+2026-05-04 10:43:17.190 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/list' request handler called.
+2026-05-04 10:43:17.202 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/list' request handler completed in 11.0947ms.
+2026-05-04 10:43:44.881 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler called.
+2026-05-04 10:43:44.901 +03:00 [INF] Excel export başlatıldı: accounts, tenant 
+2026-05-04 10:43:44.940 +03:00 [INF] Discovering tenant ID from https://turkonlinetest.crm4.dynamics.com
+2026-05-04 10:43:44.952 +03:00 [INF] Start processing HTTP request GET https://turkonlinetest.crm4.dynamics.com/api/data/v9.2/
+2026-05-04 10:43:44.956 +03:00 [INF] Sending HTTP request GET https://turkonlinetest.crm4.dynamics.com/api/data/v9.2/
+2026-05-04 10:43:46.153 +03:00 [INF] Received HTTP response headers after 1195.9193ms - 401
+2026-05-04 10:43:46.154 +03:00 [INF] End processing HTTP request after 1204.4703ms - 401
+2026-05-04 10:43:46.157 +03:00 [INF] Discovered tenant ID fc0940e1-e86a-47e6-aa2b-f157f7f0d062 for https://turkonlinetest.crm4.dynamics.com
+2026-05-04 10:43:46.159 +03:00 [INF] Acquiring token via ROPC: username=crmadm@turkon.com, clientId=51f81489-12ee-4a9e-aaae-a2591f45987d (well-known=true), tenantId=fc0940e1-e86a-47e6-aa2b-f157f7f0d062
+2026-05-04 10:43:46.160 +03:00 [INF] Start processing HTTP request POST https://login.microsoftonline.com/fc0940e1-e86a-47e6-aa2b-f157f7f0d062/oauth2/v2.0/token
+2026-05-04 10:43:46.160 +03:00 [INF] Sending HTTP request POST https://login.microsoftonline.com/fc0940e1-e86a-47e6-aa2b-f157f7f0d062/oauth2/v2.0/token
+2026-05-04 10:43:46.512 +03:00 [INF] Received HTTP response headers after 352.0492ms - 200
+2026-05-04 10:43:46.513 +03:00 [INF] End processing HTTP request after 352.4245ms - 200
+2026-05-04 10:43:46.514 +03:00 [INF] Token acquired (ROPC), expires in "01:11:59"
+2026-05-04 10:43:46.515 +03:00 [INF] OData GET https://turkonlinetest.crm4.dynamics.com/api/data/v9.2/accounts?$select=name,telephone1,emailaddress1,address1_city,websiteurl
+2026-05-04 10:43:46.516 +03:00 [INF] Start processing HTTP request GET https://turkonlinetest.crm4.dynamics.com/api/data/v9.2/accounts?$select=name,telephone1,emailaddress1,address1_city,websiteurl
+2026-05-04 10:43:46.516 +03:00 [INF] Sending HTTP request GET https://turkonlinetest.crm4.dynamics.com/api/data/v9.2/accounts?$select=name,telephone1,emailaddress1,address1_city,websiteurl
+2026-05-04 10:43:47.270 +03:00 [INF] Received HTTP response headers after 754.0474ms - 200
+2026-05-04 10:43:47.270 +03:00 [INF] End processing HTTP request after 754.4565ms - 200
+2026-05-04 10:43:47.829 +03:00 [INF] Query returned 5000 record(s) for accounts
+2026-05-04 10:43:47.842 +03:00 [INF] Export tamamlandı: 5 kayıt, /mnt/user-data/outputs/firma_kayitlari.xlsx, 2.9s
+2026-05-04 10:43:47.844 +03:00 [INF] [AUDIT] Tenant= Tool=dynamics_export_to_excel Duration=2943ms Success=true
+2026-05-04 10:43:47.844 +03:00 [INF] [AUDIT] Tenant= Tool=dynamics_export_to_excel Duration=2944ms Success=false
+2026-05-04 10:43:47.846 +03:00 [ERR] "dynamics_export_to_excel" threw an unhandled exception.
+System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind, UriCreationOptions& creationOptions)
+   at System.Uri..ctor(String uriString)
+   at DynamicsAI.McpServer.Tools.ExportTool.ExportToExcel(ExportToExcelUseCase useCase, DefaultTenantOptions defaultTenant, AuditLogger auditLogger, ExportRequest request, CancellationToken cancellationToken) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.McpServer\Tools\ExportTool.cs:line 42
+   at Microsoft.Extensions.AI.AIFunctionFactory.ReflectionAIFunctionDescriptor.<>c__DisplayClass35_1.<<GetReturnParameterMarshaller>b__10>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.Extensions.AI.AIFunctionFactory.ReflectionAIFunction.InvokeCoreAsync(AIFunctionArguments arguments, CancellationToken cancellationToken)
+   at Microsoft.Extensions.AI.AIFunctionFactory.ReflectionAIFunction.InvokeCoreAsync(AIFunctionArguments arguments, CancellationToken cancellationToken)
+   at ModelContextProtocol.Server.AIFunctionMcpServerTool.InvokeAsync(RequestContext`1 request, CancellationToken cancellationToken)
+   at ModelContextProtocol.Server.McpServerImpl.<>c__DisplayClass51_1.<<ConfigureTools>b__4>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ModelContextProtocol.Server.McpServerImpl.<>c__DisplayClass51_2.<<ConfigureTools>b__5>d.MoveNext()
+2026-05-04 10:43:47.855 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler completed in 2973.2516ms.
+2026-05-04 10:43:50.437 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler called.
+2026-05-04 10:43:50.440 +03:00 [INF] Executing query on accounts for tenant 
+2026-05-04 10:43:50.441 +03:00 [INF] OData GET https://turkonlinetest.crm4.dynamics.com/api/data/v9.2/accounts?$select=name,telephone1,emailaddress1,address1_city,websiteurl&$top=5
+2026-05-04 10:43:50.441 +03:00 [INF] Start processing HTTP request GET https://turkonlinetest.crm4.dynamics.com/api/data/v9.2/accounts?$select=name,telephone1,emailaddress1,address1_city,websiteurl&$top=5
+2026-05-04 10:43:50.441 +03:00 [INF] Sending HTTP request GET https://turkonlinetest.crm4.dynamics.com/api/data/v9.2/accounts?$select=name,telephone1,emailaddress1,address1_city,websiteurl&$top=5
+2026-05-04 10:43:50.571 +03:00 [INF] Received HTTP response headers after 130.6106ms - 200
+2026-05-04 10:43:50.572 +03:00 [INF] End processing HTTP request after 130.8711ms - 200
+2026-05-04 10:43:50.572 +03:00 [INF] Query returned 5 record(s) for accounts
+2026-05-04 10:43:50.572 +03:00 [INF] [AUDIT] Tenant= Tool=dynamics_execute_query Duration=132ms Success=true
+2026-05-04 10:43:50.578 +03:00 [INF] "dynamics_execute_query" completed. IsError = false.
+2026-05-04 10:43:50.578 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler completed in 140.1784ms.
+2026-05-04 10:45:28.837 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) transport completed reading messages.
+2026-05-04 10:45:28.840 +03:00 [INF] Application is shutting down...
+2026-05-04 10:45:28.847 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) shutting down.
+2026-05-04 10:45:28.848 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) shut down.
+2026-05-04 10:46:26.791 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) transport reading messages.
+2026-05-04 10:46:26.858 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-04 10:46:26.858 +03:00 [INF] Hosting environment: Production
+2026-05-04 10:46:26.858 +03:00 [INF] Content root path: C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.McpServer\bin\Debug\net8.0\
+2026-05-04 10:46:26.871 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0) method 'initialize' request handler called.
+2026-05-04 10:46:26.900 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'initialize' request handler completed in 25.9536ms.
+2026-05-04 10:46:27.014 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/list' request handler called.
+2026-05-04 10:46:27.026 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/list' request handler completed in 11.5376ms.
+2026-05-04 10:46:58.998 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler called.
+2026-05-04 10:46:59.014 +03:00 [INF] Excel export başlatıldı: accounts, tenant 
+2026-05-04 10:46:59.167 +03:00 [INF] Discovering tenant ID from https://org8799ea1f.crm.dynamics.com
+2026-05-04 10:46:59.174 +03:00 [INF] Start processing HTTP request GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/
+2026-05-04 10:46:59.176 +03:00 [INF] Sending HTTP request GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/
+2026-05-04 10:47:04.843 +03:00 [INF] Received HTTP response headers after 5666.2828ms - 401
+2026-05-04 10:47:04.844 +03:00 [INF] End processing HTTP request after 5671.9137ms - 401
+2026-05-04 10:47:04.846 +03:00 [INF] Discovered tenant ID 3520acc7-dda9-4273-b53c-3dff4119a213 for https://org8799ea1f.crm.dynamics.com
+2026-05-04 10:47:04.847 +03:00 [INF] Acquiring token via ROPC: username=a8b856a3-1576-4e71-87b8-36bc92cf5507, clientId=51f81489-12ee-4a9e-aaae-a2591f45987d (well-known=true), tenantId=3520acc7-dda9-4273-b53c-3dff4119a213
+2026-05-04 10:47:04.849 +03:00 [INF] Start processing HTTP request POST https://login.microsoftonline.com/3520acc7-dda9-4273-b53c-3dff4119a213/oauth2/v2.0/token
+2026-05-04 10:47:04.849 +03:00 [INF] Sending HTTP request POST https://login.microsoftonline.com/3520acc7-dda9-4273-b53c-3dff4119a213/oauth2/v2.0/token
+2026-05-04 10:47:06.152 +03:00 [INF] Received HTTP response headers after 1303.5552ms - 400
+2026-05-04 10:47:06.153 +03:00 [INF] End processing HTTP request after 1303.8825ms - 400
+2026-05-04 10:47:06.154 +03:00 [ERR] Token request failed (ROPC) — HTTP 400: {"error":"invalid_grant","error_description":"AADSTS50034: The user account {EUII Hidden} does not exist in the 3520acc7-dda9-4273-b53c-3dff4119a213 directory. To sign into this application, the account must be added to the directory. Trace ID: 5f1a00c9-e942-4bc5-b946-0b20b87f2d00 Correlation ID: 4e7baf3b-7a6c-4637-b839-91b7a423714b Timestamp: 2026-05-04 07:47:05Z","error_codes":[50034],"timestamp":"2026-05-04 07:47:05Z","trace_id":"5f1a00c9-e942-4bc5-b946-0b20b87f2d00","correlation_id":"4e7baf3b-7a6c-4637-b839-91b7a423714b","error_uri":"https://login.microsoftonline.com/error?code=50034"}
+2026-05-04 10:47:06.157 +03:00 [INF] [AUDIT] Tenant= Tool=dynamics_export_to_excel Duration=7142ms Success=false
+2026-05-04 10:47:06.159 +03:00 [ERR] "dynamics_export_to_excel" threw an unhandled exception.
+DynamicsAI.Domain.Exceptions.TenantAuthException: Token alınamadı (ROPC) — HTTP 400:
+{"error":"invalid_grant","error_description":"AADSTS50034: The user account {EUII Hidden} does not exist in the 3520acc7-dda9-4273-b53c-3dff4119a213 directory. To sign into this application, the account must be added to the directory. Trace ID: 5f1a00c9-e942-4bc5-b946-0b20b87f2d00 Correlation ID: 4e7baf3b-7a6c-4637-b839-91b7a423714b Timestamp: 2026-05-04 07:47:05Z","error_codes":[50034],"timestamp":"2026-05-04 07:47:05Z","trace_id":"5f1a00c9-e942-4bc5-b946-0b20b87f2d00","correlation_id":"4e7baf3b-7a6c-4637-b839-91b7a423714b","error_uri":"https://login.microsoftonline.com/error?code=50034"}
+
+⚠ ÇÖZÜM: Kullanıcı bulunamadı. username (e-posta) adresini kontrol edin.
+   at DynamicsAI.Infrastructure.Dynamics.DynamicsAuthProvider.PostTokenAsync(String tokenUrl, Dictionary`2 body, String cacheKey, String method, CancellationToken ct) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\Dynamics\DynamicsAuthProvider.cs:line 126
+   at DynamicsAI.Infrastructure.Dynamics.DynamicsAuthProvider.AcquireByRopcAsync(TenantConfig tenant, String tenantId, CancellationToken ct) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\Dynamics\DynamicsAuthProvider.cs:line 101
+   at DynamicsAI.Infrastructure.Dynamics.DynamicsAuthProvider.AcquireTokenAsync(TenantConfig tenant, CancellationToken ct) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\Dynamics\DynamicsAuthProvider.cs:line 34
+   at DynamicsAI.Infrastructure.Dynamics.DynamicsQueryService.ExecuteQueryAsync(TenantConfig tenant, QueryRequest request, CancellationToken ct) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\Dynamics\DynamicsQueryService.cs:line 19
+   at DynamicsAI.Infrastructure.Dynamics.DynamicsExportService.<>c__DisplayClass3_0.<<ExportToExcelAsync>g__GetRows|0>d.MoveNext() in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\Dynamics\DynamicsExportService.cs:line 50
+   at MiniExcelLibs.WriteAdapter.EnumerableWriteAdapter.GetColumns()
+   at MiniExcelLibs.OpenXml.ExcelOpenXmlSheetWriter.WriteValues(MiniExcelStreamWriter writer, Object values)
+   at MiniExcelLibs.OpenXml.ExcelOpenXmlSheetWriter.CreateSheetXml(Object values, String sheetPath)
+   at MiniExcelLibs.OpenXml.ExcelOpenXmlSheetWriter.SaveAs()
+   at MiniExcelLibs.MiniExcel.SaveAs(Stream stream, Object value, Boolean printHeader, String sheetName, ExcelType excelType, IConfiguration configuration)
+   at MiniExcelLibs.MiniExcel.SaveAs(String path, Object value, Boolean printHeader, String sheetName, ExcelType excelType, IConfiguration configuration, Boolean overwriteFile)
+   at DynamicsAI.Infrastructure.Dynamics.DynamicsExportService.<>c__DisplayClass3_0.<ExportToExcelAsync>b__1() in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\Dynamics\DynamicsExportService.cs:line 81
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at DynamicsAI.Infrastructure.Dynamics.DynamicsExportService.ExportToExcelAsync(TenantConfig tenant, ExportRequest request, CancellationToken ct) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\Dynamics\DynamicsExportService.cs:line 81
+   at DynamicsAI.Application.UseCases.ExportToExcelUseCase.ExecuteAsync(ExportRequest request, CancellationToken ct) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Application\UseCases\ExportToExcelUseCase.cs:line 22
+   at DynamicsAI.McpServer.Tools.ExportTool.ExportToExcel(ExportToExcelUseCase useCase, DefaultTenantOptions defaultTenant, AuditLogger auditLogger, ExportRequest request, CancellationToken cancellationToken) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.McpServer\Tools\ExportTool.cs:line 38
+   at Microsoft.Extensions.AI.AIFunctionFactory.ReflectionAIFunctionDescriptor.<>c__DisplayClass35_1.<<GetReturnParameterMarshaller>b__10>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.Extensions.AI.AIFunctionFactory.ReflectionAIFunction.InvokeCoreAsync(AIFunctionArguments arguments, CancellationToken cancellationToken)
+   at Microsoft.Extensions.AI.AIFunctionFactory.ReflectionAIFunction.InvokeCoreAsync(AIFunctionArguments arguments, CancellationToken cancellationToken)
+   at ModelContextProtocol.Server.AIFunctionMcpServerTool.InvokeAsync(RequestContext`1 request, CancellationToken cancellationToken)
+   at ModelContextProtocol.Server.McpServerImpl.<>c__DisplayClass51_1.<<ConfigureTools>b__4>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ModelContextProtocol.Server.McpServerImpl.<>c__DisplayClass51_2.<<ConfigureTools>b__5>d.MoveNext()
+2026-05-04 10:47:06.183 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler completed in 7184.4001ms.
+2026-05-04 10:47:08.676 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler called.
+2026-05-04 10:47:08.679 +03:00 [INF] Executing query on accounts for tenant 
+2026-05-04 10:47:08.679 +03:00 [INF] Acquiring token via ROPC: username=a8b856a3-1576-4e71-87b8-36bc92cf5507, clientId=51f81489-12ee-4a9e-aaae-a2591f45987d (well-known=true), tenantId=3520acc7-dda9-4273-b53c-3dff4119a213
+2026-05-04 10:47:08.679 +03:00 [INF] Start processing HTTP request POST https://login.microsoftonline.com/3520acc7-dda9-4273-b53c-3dff4119a213/oauth2/v2.0/token
+2026-05-04 10:47:08.679 +03:00 [INF] Sending HTTP request POST https://login.microsoftonline.com/3520acc7-dda9-4273-b53c-3dff4119a213/oauth2/v2.0/token
+2026-05-04 10:47:08.936 +03:00 [INF] Received HTTP response headers after 256.8392ms - 400
+2026-05-04 10:47:08.936 +03:00 [INF] End processing HTTP request after 257.0922ms - 400
+2026-05-04 10:47:08.936 +03:00 [ERR] Token request failed (ROPC) — HTTP 400: {"error":"invalid_grant","error_description":"AADSTS50034: The user account {EUII Hidden} does not exist in the 3520acc7-dda9-4273-b53c-3dff4119a213 directory. To sign into this application, the account must be added to the directory. Trace ID: 5f1a00c9-e942-4bc5-b946-0b2047802d00 Correlation ID: beafd4b1-a2cb-4b6c-9c4d-b09b031978bc Timestamp: 2026-05-04 07:47:08Z","error_codes":[50034],"timestamp":"2026-05-04 07:47:08Z","trace_id":"5f1a00c9-e942-4bc5-b946-0b2047802d00","correlation_id":"beafd4b1-a2cb-4b6c-9c4d-b09b031978bc","error_uri":"https://login.microsoftonline.com/error?code=50034"}
+2026-05-04 10:47:08.936 +03:00 [INF] [AUDIT] Tenant= Tool=dynamics_execute_query Duration=258ms Success=false
+2026-05-04 10:47:08.937 +03:00 [ERR] "dynamics_execute_query" threw an unhandled exception.
+DynamicsAI.Domain.Exceptions.TenantAuthException: Token alınamadı (ROPC) — HTTP 400:
+{"error":"invalid_grant","error_description":"AADSTS50034: The user account {EUII Hidden} does not exist in the 3520acc7-dda9-4273-b53c-3dff4119a213 directory. To sign into this application, the account must be added to the directory. Trace ID: 5f1a00c9-e942-4bc5-b946-0b2047802d00 Correlation ID: beafd4b1-a2cb-4b6c-9c4d-b09b031978bc Timestamp: 2026-05-04 07:47:08Z","error_codes":[50034],"timestamp":"2026-05-04 07:47:08Z","trace_id":"5f1a00c9-e942-4bc5-b946-0b2047802d00","correlation_id":"beafd4b1-a2cb-4b6c-9c4d-b09b031978bc","error_uri":"https://login.microsoftonline.com/error?code=50034"}
+
+⚠ ÇÖZÜM: Kullanıcı bulunamadı. username (e-posta) adresini kontrol edin.
+   at DynamicsAI.Infrastructure.Dynamics.DynamicsAuthProvider.PostTokenAsync(String tokenUrl, Dictionary`2 body, String cacheKey, String method, CancellationToken ct) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\Dynamics\DynamicsAuthProvider.cs:line 126
+   at DynamicsAI.Infrastructure.Dynamics.DynamicsAuthProvider.AcquireByRopcAsync(TenantConfig tenant, String tenantId, CancellationToken ct) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\Dynamics\DynamicsAuthProvider.cs:line 101
+   at DynamicsAI.Infrastructure.Dynamics.DynamicsAuthProvider.AcquireTokenAsync(TenantConfig tenant, CancellationToken ct) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\Dynamics\DynamicsAuthProvider.cs:line 34
+   at DynamicsAI.Infrastructure.Dynamics.DynamicsQueryService.ExecuteQueryAsync(TenantConfig tenant, QueryRequest request, CancellationToken ct) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\Dynamics\DynamicsQueryService.cs:line 19
+   at DynamicsAI.Application.UseCases.ExecuteQueryUseCase.ExecuteAsync(QueryRequest request, CancellationToken ct) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Application\UseCases\ExecuteQueryUseCase.cs:line 21
+   at DynamicsAI.McpServer.Tools.QueryTool.ExecuteQuery(ExecuteQueryUseCase useCase, DefaultTenantOptions defaultTenant, AuditLogger auditLogger, QueryRequest request, CancellationToken cancellationToken) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.McpServer\Tools\QueryTool.cs:line 37
+   at Microsoft.Extensions.AI.AIFunctionFactory.ReflectionAIFunctionDescriptor.<>c__DisplayClass35_1.<<GetReturnParameterMarshaller>b__10>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.Extensions.AI.AIFunctionFactory.ReflectionAIFunction.InvokeCoreAsync(AIFunctionArguments arguments, CancellationToken cancellationToken)
+   at Microsoft.Extensions.AI.AIFunctionFactory.ReflectionAIFunction.InvokeCoreAsync(AIFunctionArguments arguments, CancellationToken cancellationToken)
+   at ModelContextProtocol.Server.AIFunctionMcpServerTool.InvokeAsync(RequestContext`1 request, CancellationToken cancellationToken)
+   at ModelContextProtocol.Server.McpServerImpl.<>c__DisplayClass51_1.<<ConfigureTools>b__4>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ModelContextProtocol.Server.McpServerImpl.<>c__DisplayClass51_2.<<ConfigureTools>b__5>d.MoveNext()
+2026-05-04 10:47:08.937 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler completed in 261.6724ms.
+2026-05-04 10:47:43.725 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) transport completed reading messages.
+2026-05-04 10:47:43.730 +03:00 [INF] Application is shutting down...
+2026-05-04 10:47:43.736 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) shutting down.
+2026-05-04 10:47:43.736 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) shut down.
+2026-05-04 10:48:07.195 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) transport reading messages.
+2026-05-04 10:48:07.250 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-04 10:48:07.251 +03:00 [INF] Hosting environment: Production
+2026-05-04 10:48:07.251 +03:00 [INF] Content root path: C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.McpServer\bin\Debug\net8.0\
+2026-05-04 10:48:07.259 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0) method 'initialize' request handler called.
+2026-05-04 10:48:07.282 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/list' request handler called.
+2026-05-04 10:48:07.283 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'initialize' request handler completed in 21.8191ms.
+2026-05-04 10:48:07.292 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/list' request handler completed in 10.6727ms.
+2026-05-04 10:48:27.060 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler called.
+2026-05-04 10:48:27.072 +03:00 [INF] Excel export başlatıldı: accounts, tenant 
+2026-05-04 10:48:27.257 +03:00 [INF] Discovering tenant ID from https://org8799ea1f.crm.dynamics.com
+2026-05-04 10:48:27.264 +03:00 [INF] Start processing HTTP request GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/
+2026-05-04 10:48:27.266 +03:00 [INF] Sending HTTP request GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/
+2026-05-04 10:48:30.393 +03:00 [INF] Received HTTP response headers after 3125.1787ms - 401
+2026-05-04 10:48:30.393 +03:00 [INF] End processing HTTP request after 3130.9724ms - 401
+2026-05-04 10:48:30.396 +03:00 [INF] Discovered tenant ID 3520acc7-dda9-4273-b53c-3dff4119a213 for https://org8799ea1f.crm.dynamics.com
+2026-05-04 10:48:30.397 +03:00 [INF] Acquiring token via ClientSecret: clientId=a8b856a3-1576-4e71-87b8-36bc92cf5507, tenantId=3520acc7-dda9-4273-b53c-3dff4119a213
+2026-05-04 10:48:30.398 +03:00 [INF] Start processing HTTP request POST https://login.microsoftonline.com/3520acc7-dda9-4273-b53c-3dff4119a213/oauth2/v2.0/token
+2026-05-04 10:48:30.398 +03:00 [INF] Sending HTTP request POST https://login.microsoftonline.com/3520acc7-dda9-4273-b53c-3dff4119a213/oauth2/v2.0/token
+2026-05-04 10:48:30.843 +03:00 [INF] Received HTTP response headers after 444.8116ms - 200
+2026-05-04 10:48:30.843 +03:00 [INF] End processing HTTP request after 445.2404ms - 200
+2026-05-04 10:48:30.845 +03:00 [INF] Token acquired (ClientSecret), expires in "00:54:59"
+2026-05-04 10:48:30.846 +03:00 [INF] OData GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts?$select=name,telephone1,emailaddress1,address1_city,websiteurl,revenue
+2026-05-04 10:48:30.847 +03:00 [INF] Start processing HTTP request GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts?$select=name,telephone1,emailaddress1,address1_city,websiteurl,revenue
+2026-05-04 10:48:30.848 +03:00 [INF] Sending HTTP request GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts?$select=name,telephone1,emailaddress1,address1_city,websiteurl,revenue
+2026-05-04 10:48:31.547 +03:00 [INF] Received HTTP response headers after 699.107ms - 403
+2026-05-04 10:48:31.547 +03:00 [INF] End processing HTTP request after 699.5463ms - 403
+2026-05-04 10:48:31.547 +03:00 [ERR] Dynamics query failed "Forbidden": {"error":{"code":"0x80072560","message":"The user is not a member of the organization."}}
+2026-05-04 10:48:31.549 +03:00 [INF] [AUDIT] Tenant= Tool=dynamics_export_to_excel Duration=4478ms Success=false
+2026-05-04 10:48:31.551 +03:00 [ERR] "dynamics_export_to_excel" threw an unhandled exception.
+System.InvalidOperationException: Dynamics sorgusu başarısız (403): {"error":{"code":"0x80072560","message":"The user is not a member of the organization."}}
+   at DynamicsAI.Infrastructure.Dynamics.DynamicsQueryService.FetchUrlAsync(String token, String url, CancellationToken ct) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\Dynamics\DynamicsQueryService.cs:line 43
+   at DynamicsAI.Infrastructure.Dynamics.DynamicsQueryService.ExecuteQueryAsync(TenantConfig tenant, QueryRequest request, CancellationToken ct) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\Dynamics\DynamicsQueryService.cs:line 22
+   at DynamicsAI.Infrastructure.Dynamics.DynamicsExportService.<>c__DisplayClass3_0.<<ExportToExcelAsync>g__GetRows|0>d.MoveNext() in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\Dynamics\DynamicsExportService.cs:line 50
+   at MiniExcelLibs.WriteAdapter.EnumerableWriteAdapter.GetColumns()
+   at MiniExcelLibs.OpenXml.ExcelOpenXmlSheetWriter.WriteValues(MiniExcelStreamWriter writer, Object values)
+   at MiniExcelLibs.OpenXml.ExcelOpenXmlSheetWriter.CreateSheetXml(Object values, String sheetPath)
+   at MiniExcelLibs.OpenXml.ExcelOpenXmlSheetWriter.SaveAs()
+   at MiniExcelLibs.MiniExcel.SaveAs(Stream stream, Object value, Boolean printHeader, String sheetName, ExcelType excelType, IConfiguration configuration)
+   at MiniExcelLibs.MiniExcel.SaveAs(String path, Object value, Boolean printHeader, String sheetName, ExcelType excelType, IConfiguration configuration, Boolean overwriteFile)
+   at DynamicsAI.Infrastructure.Dynamics.DynamicsExportService.<>c__DisplayClass3_0.<ExportToExcelAsync>b__1() in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\Dynamics\DynamicsExportService.cs:line 81
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at DynamicsAI.Infrastructure.Dynamics.DynamicsExportService.ExportToExcelAsync(TenantConfig tenant, ExportRequest request, CancellationToken ct) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\Dynamics\DynamicsExportService.cs:line 81
+   at DynamicsAI.Application.UseCases.ExportToExcelUseCase.ExecuteAsync(ExportRequest request, CancellationToken ct) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Application\UseCases\ExportToExcelUseCase.cs:line 22
+   at DynamicsAI.McpServer.Tools.ExportTool.ExportToExcel(ExportToExcelUseCase useCase, DefaultTenantOptions defaultTenant, AuditLogger auditLogger, ExportRequest request, CancellationToken cancellationToken) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.McpServer\Tools\ExportTool.cs:line 38
+   at Microsoft.Extensions.AI.AIFunctionFactory.ReflectionAIFunctionDescriptor.<>c__DisplayClass35_1.<<GetReturnParameterMarshaller>b__10>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.Extensions.AI.AIFunctionFactory.ReflectionAIFunction.InvokeCoreAsync(AIFunctionArguments arguments, CancellationToken cancellationToken)
+   at Microsoft.Extensions.AI.AIFunctionFactory.ReflectionAIFunction.InvokeCoreAsync(AIFunctionArguments arguments, CancellationToken cancellationToken)
+   at ModelContextProtocol.Server.AIFunctionMcpServerTool.InvokeAsync(RequestContext`1 request, CancellationToken cancellationToken)
+   at ModelContextProtocol.Server.McpServerImpl.<>c__DisplayClass51_1.<<ConfigureTools>b__4>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ModelContextProtocol.Server.McpServerImpl.<>c__DisplayClass51_2.<<ConfigureTools>b__5>d.MoveNext()
+2026-05-04 10:48:31.593 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler completed in 4532.5591ms.
+2026-05-04 10:48:33.801 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler called.
+2026-05-04 10:48:33.803 +03:00 [INF] Executing query on accounts for tenant 
+2026-05-04 10:48:33.803 +03:00 [INF] OData GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts?$select=name,telephone1,emailaddress1,address1_city,websiteurl&$top=5
+2026-05-04 10:48:33.803 +03:00 [INF] Start processing HTTP request GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts?$select=name,telephone1,emailaddress1,address1_city,websiteurl&$top=5
+2026-05-04 10:48:33.803 +03:00 [INF] Sending HTTP request GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts?$select=name,telephone1,emailaddress1,address1_city,websiteurl&$top=5
+2026-05-04 10:48:34.018 +03:00 [INF] Received HTTP response headers after 214.413ms - 403
+2026-05-04 10:48:34.018 +03:00 [INF] End processing HTTP request after 214.6779ms - 403
+2026-05-04 10:48:34.018 +03:00 [ERR] Dynamics query failed "Forbidden": {"error":{"code":"0x80072560","message":"The user is not a member of the organization."}}
+2026-05-04 10:48:34.018 +03:00 [INF] [AUDIT] Tenant= Tool=dynamics_execute_query Duration=215ms Success=false
+2026-05-04 10:48:34.018 +03:00 [ERR] "dynamics_execute_query" threw an unhandled exception.
+System.InvalidOperationException: Dynamics sorgusu başarısız (403): {"error":{"code":"0x80072560","message":"The user is not a member of the organization."}}
+   at DynamicsAI.Infrastructure.Dynamics.DynamicsQueryService.FetchUrlAsync(String token, String url, CancellationToken ct) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\Dynamics\DynamicsQueryService.cs:line 43
+   at DynamicsAI.Infrastructure.Dynamics.DynamicsQueryService.ExecuteQueryAsync(TenantConfig tenant, QueryRequest request, CancellationToken ct) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\Dynamics\DynamicsQueryService.cs:line 22
+   at DynamicsAI.Application.UseCases.ExecuteQueryUseCase.ExecuteAsync(QueryRequest request, CancellationToken ct) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Application\UseCases\ExecuteQueryUseCase.cs:line 21
+   at DynamicsAI.McpServer.Tools.QueryTool.ExecuteQuery(ExecuteQueryUseCase useCase, DefaultTenantOptions defaultTenant, AuditLogger auditLogger, QueryRequest request, CancellationToken cancellationToken) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.McpServer\Tools\QueryTool.cs:line 37
+   at Microsoft.Extensions.AI.AIFunctionFactory.ReflectionAIFunctionDescriptor.<>c__DisplayClass35_1.<<GetReturnParameterMarshaller>b__10>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.Extensions.AI.AIFunctionFactory.ReflectionAIFunction.InvokeCoreAsync(AIFunctionArguments arguments, CancellationToken cancellationToken)
+   at Microsoft.Extensions.AI.AIFunctionFactory.ReflectionAIFunction.InvokeCoreAsync(AIFunctionArguments arguments, CancellationToken cancellationToken)
+   at ModelContextProtocol.Server.AIFunctionMcpServerTool.InvokeAsync(RequestContext`1 request, CancellationToken cancellationToken)
+   at ModelContextProtocol.Server.McpServerImpl.<>c__DisplayClass51_1.<<ConfigureTools>b__4>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ModelContextProtocol.Server.McpServerImpl.<>c__DisplayClass51_2.<<ConfigureTools>b__5>d.MoveNext()
+2026-05-04 10:48:34.019 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler completed in 218.0095ms.
+2026-05-04 10:50:03.004 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) transport completed reading messages.
+2026-05-04 10:50:03.009 +03:00 [INF] Application is shutting down...
+2026-05-04 10:50:03.015 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) shutting down.
+2026-05-04 10:50:03.015 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) shut down.
+2026-05-04 10:50:16.917 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) transport reading messages.
+2026-05-04 10:50:16.978 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-04 10:50:16.979 +03:00 [INF] Hosting environment: Production
+2026-05-04 10:50:16.979 +03:00 [INF] Content root path: C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.McpServer\bin\Debug\net8.0\
+2026-05-04 10:50:16.989 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0) method 'initialize' request handler called.
+2026-05-04 10:50:17.009 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/list' request handler called.
+2026-05-04 10:50:17.009 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'initialize' request handler completed in 18.2238ms.
+2026-05-04 10:50:17.020 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/list' request handler completed in 10.652ms.
+2026-05-04 10:50:38.817 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler called.
+2026-05-04 10:50:38.833 +03:00 [INF] Excel export başlatıldı: accounts, tenant 
+2026-05-04 10:50:38.991 +03:00 [INF] Discovering tenant ID from https://org8799ea1f.crm.dynamics.com
+2026-05-04 10:50:38.999 +03:00 [INF] Start processing HTTP request GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/
+2026-05-04 10:50:39.001 +03:00 [INF] Sending HTTP request GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/
+2026-05-04 10:50:43.421 +03:00 [INF] Received HTTP response headers after 4418.5612ms - 401
+2026-05-04 10:50:43.422 +03:00 [INF] End processing HTTP request after 4425.2587ms - 401
+2026-05-04 10:50:43.425 +03:00 [INF] Discovered tenant ID 3520acc7-dda9-4273-b53c-3dff4119a213 for https://org8799ea1f.crm.dynamics.com
+2026-05-04 10:50:43.426 +03:00 [INF] Acquiring token via ROPC: username=hayrettingov@sgbt8.onmicrosoft.com, clientId=51f81489-12ee-4a9e-aaae-a2591f45987d (well-known=true), tenantId=3520acc7-dda9-4273-b53c-3dff4119a213
+2026-05-04 10:50:43.428 +03:00 [INF] Start processing HTTP request POST https://login.microsoftonline.com/3520acc7-dda9-4273-b53c-3dff4119a213/oauth2/v2.0/token
+2026-05-04 10:50:43.428 +03:00 [INF] Sending HTTP request POST https://login.microsoftonline.com/3520acc7-dda9-4273-b53c-3dff4119a213/oauth2/v2.0/token
+2026-05-04 10:50:43.780 +03:00 [INF] Received HTTP response headers after 352.2337ms - 200
+2026-05-04 10:50:43.780 +03:00 [INF] End processing HTTP request after 352.6533ms - 200
+2026-05-04 10:50:43.782 +03:00 [INF] Token acquired (ROPC), expires in "01:19:40"
+2026-05-04 10:50:43.783 +03:00 [INF] OData GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts?$select=name,telephone1,emailaddress1,address1_city,websiteurl
+2026-05-04 10:50:43.785 +03:00 [INF] Start processing HTTP request GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts?$select=name,telephone1,emailaddress1,address1_city,websiteurl
+2026-05-04 10:50:43.785 +03:00 [INF] Sending HTTP request GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts?$select=name,telephone1,emailaddress1,address1_city,websiteurl
+2026-05-04 10:50:47.580 +03:00 [INF] Received HTTP response headers after 3795.1185ms - 200
+2026-05-04 10:50:47.580 +03:00 [INF] End processing HTTP request after 3795.4699ms - 200
+2026-05-04 10:50:47.583 +03:00 [INF] Query returned 6 record(s) for accounts
+2026-05-04 10:50:47.598 +03:00 [INF] Export tamamlandı: 5 kayıt, /mnt/user-data/outputs/firmalar.xlsx, 8.8s
+2026-05-04 10:50:47.599 +03:00 [INF] [AUDIT] Tenant= Tool=dynamics_export_to_excel Duration=8766ms Success=true
+2026-05-04 10:50:47.599 +03:00 [INF] [AUDIT] Tenant= Tool=dynamics_export_to_excel Duration=8766ms Success=false
+2026-05-04 10:50:47.600 +03:00 [ERR] "dynamics_export_to_excel" threw an unhandled exception.
+System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind, UriCreationOptions& creationOptions)
+   at System.Uri..ctor(String uriString)
+   at DynamicsAI.McpServer.Tools.ExportTool.ExportToExcel(ExportToExcelUseCase useCase, DefaultTenantOptions defaultTenant, AuditLogger auditLogger, ExportRequest request, CancellationToken cancellationToken) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.McpServer\Tools\ExportTool.cs:line 42
+   at Microsoft.Extensions.AI.AIFunctionFactory.ReflectionAIFunctionDescriptor.<>c__DisplayClass35_1.<<GetReturnParameterMarshaller>b__10>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.Extensions.AI.AIFunctionFactory.ReflectionAIFunction.InvokeCoreAsync(AIFunctionArguments arguments, CancellationToken cancellationToken)
+   at Microsoft.Extensions.AI.AIFunctionFactory.ReflectionAIFunction.InvokeCoreAsync(AIFunctionArguments arguments, CancellationToken cancellationToken)
+   at ModelContextProtocol.Server.AIFunctionMcpServerTool.InvokeAsync(RequestContext`1 request, CancellationToken cancellationToken)
+   at ModelContextProtocol.Server.McpServerImpl.<>c__DisplayClass51_1.<<ConfigureTools>b__4>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ModelContextProtocol.Server.McpServerImpl.<>c__DisplayClass51_2.<<ConfigureTools>b__5>d.MoveNext()
+2026-05-04 10:50:47.613 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler completed in 8796.1311ms.
+2026-05-04 10:50:49.507 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler called.
+2026-05-04 10:50:49.511 +03:00 [INF] Executing query on accounts for tenant 
+2026-05-04 10:50:49.511 +03:00 [INF] OData GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts?$select=name,telephone1,emailaddress1,address1_city,websiteurl&$top=5
+2026-05-04 10:50:49.511 +03:00 [INF] Start processing HTTP request GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts?$select=name,telephone1,emailaddress1,address1_city,websiteurl&$top=5
+2026-05-04 10:50:49.511 +03:00 [INF] Sending HTTP request GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts?$select=name,telephone1,emailaddress1,address1_city,websiteurl&$top=5
+2026-05-04 10:50:49.767 +03:00 [INF] Received HTTP response headers after 255.6165ms - 200
+2026-05-04 10:50:49.767 +03:00 [INF] End processing HTTP request after 255.9094ms - 200
+2026-05-04 10:50:49.767 +03:00 [INF] Query returned 5 record(s) for accounts
+2026-05-04 10:50:49.767 +03:00 [INF] [AUDIT] Tenant= Tool=dynamics_execute_query Duration=257ms Success=true
+2026-05-04 10:50:49.774 +03:00 [INF] "dynamics_execute_query" completed. IsError = false.
+2026-05-04 10:50:49.775 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler completed in 267.0798ms.
+2026-05-04 10:52:10.930 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler called.
+2026-05-04 10:52:10.933 +03:00 [INF] Executing "Create" on accounts for tenant 
+2026-05-04 10:52:10.935 +03:00 [INF] OData POST https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts
+2026-05-04 10:52:10.935 +03:00 [INF] Start processing HTTP request POST https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts
+2026-05-04 10:52:10.935 +03:00 [INF] Sending HTTP request POST https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts
+2026-05-04 10:52:14.946 +03:00 [INF] Received HTTP response headers after 4010.8721ms - 204
+2026-05-04 10:52:14.946 +03:00 [INF] End processing HTTP request after 4011.0978ms - 204
+2026-05-04 10:52:14.953 +03:00 [INF] Created accounts with ID 9753f621-8e47-f111-bec6-6045bd08b6ba
+2026-05-04 10:52:14.953 +03:00 [INF] [AUDIT] Tenant= Tool=dynamics_execute_crud Duration=4019ms Success=true
+2026-05-04 10:52:14.954 +03:00 [INF] "dynamics_execute_crud" completed. IsError = false.
+2026-05-04 10:52:14.954 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler completed in 4023.4361ms.
+2026-05-04 10:55:25.463 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler called.
+2026-05-04 10:55:25.464 +03:00 [INF] Executing query on accounts for tenant 
+2026-05-04 10:55:25.465 +03:00 [INF] OData GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts?$select=name,telephone1,emailaddress1,address1_city,websiteurl&$filter=name%20eq%20%27HayrettinCA%27&$top=1
+2026-05-04 10:55:25.465 +03:00 [INF] Start processing HTTP request GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts?$select=name,telephone1,emailaddress1,address1_city,websiteurl&$filter=name%20eq%20%27HayrettinCA%27&$top=1
+2026-05-04 10:55:25.465 +03:00 [INF] Sending HTTP request GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts?$select=name,telephone1,emailaddress1,address1_city,websiteurl&$filter=name%20eq%20%27HayrettinCA%27&$top=1
+2026-05-04 10:55:26.121 +03:00 [INF] Received HTTP response headers after 655.9965ms - 200
+2026-05-04 10:55:26.121 +03:00 [INF] End processing HTTP request after 656.3854ms - 200
+2026-05-04 10:55:26.121 +03:00 [INF] Query returned 1 record(s) for accounts
+2026-05-04 10:55:26.121 +03:00 [INF] [AUDIT] Tenant= Tool=dynamics_execute_query Duration=657ms Success=true
+2026-05-04 10:55:26.122 +03:00 [INF] "dynamics_execute_query" completed. IsError = false.
+2026-05-04 10:55:26.122 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler completed in 658.3725ms.
+2026-05-04 10:55:28.162 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler called.
+2026-05-04 10:55:28.164 +03:00 [INF] Executing query on accounts for tenant 
+2026-05-04 10:55:28.164 +03:00 [INF] OData GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts?$select=name,telephone1,emailaddress1,address1_city,websiteurl&$filter=name%20ne%20%27HayrettinCA%27&$top=2
+2026-05-04 10:55:28.164 +03:00 [INF] Start processing HTTP request GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts?$select=name,telephone1,emailaddress1,address1_city,websiteurl&$filter=name%20ne%20%27HayrettinCA%27&$top=2
+2026-05-04 10:55:28.164 +03:00 [INF] Sending HTTP request GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts?$select=name,telephone1,emailaddress1,address1_city,websiteurl&$filter=name%20ne%20%27HayrettinCA%27&$top=2
+2026-05-04 10:55:28.428 +03:00 [INF] Received HTTP response headers after 264.2154ms - 200
+2026-05-04 10:55:28.429 +03:00 [INF] End processing HTTP request after 264.8194ms - 200
+2026-05-04 10:55:28.429 +03:00 [INF] Query returned 2 record(s) for accounts
+2026-05-04 10:55:28.429 +03:00 [INF] [AUDIT] Tenant= Tool=dynamics_execute_query Duration=265ms Success=true
+2026-05-04 10:55:28.430 +03:00 [INF] "dynamics_execute_query" completed. IsError = false.
+2026-05-04 10:55:28.430 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler completed in 267.6062ms.
+2026-05-04 10:56:34.408 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler called.
+2026-05-04 10:56:34.409 +03:00 [INF] Executing "Update" on accounts for tenant 
+2026-05-04 10:56:34.410 +03:00 [INF] OData PATCH https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts(9753f621-8e47-f111-bec6-6045bd08b6ba)
+2026-05-04 10:56:34.410 +03:00 [INF] Start processing HTTP request PATCH https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts(9753f621-8e47-f111-bec6-6045bd08b6ba)
+2026-05-04 10:56:34.410 +03:00 [INF] Sending HTTP request PATCH https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts(9753f621-8e47-f111-bec6-6045bd08b6ba)
+2026-05-04 10:56:36.817 +03:00 [INF] Received HTTP response headers after 2407.3388ms - 204
+2026-05-04 10:56:36.817 +03:00 [INF] End processing HTTP request after 2407.5225ms - 204
+2026-05-04 10:56:36.817 +03:00 [INF] Updated accounts 9753f621-8e47-f111-bec6-6045bd08b6ba
+2026-05-04 10:56:36.818 +03:00 [INF] [AUDIT] Tenant= Tool=dynamics_execute_crud Duration=2408ms Success=true
+2026-05-04 10:56:36.818 +03:00 [INF] "dynamics_execute_crud" completed. IsError = false.
+2026-05-04 10:56:36.818 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler completed in 2409.7081ms.
+2026-05-04 10:56:59.457 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler called.
+2026-05-04 10:56:59.457 +03:00 [INF] Executing query on accounts for tenant 
+2026-05-04 10:56:59.457 +03:00 [INF] OData GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts?$select=name,telephone1,emailaddress1,address1_city,websiteurl,numberofemployees,revenue,address1_country,description&$filter=name%20eq%20%27HayrettinCA%27&$top=1
+2026-05-04 10:56:59.458 +03:00 [INF] Start processing HTTP request GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts?$select=name,telephone1,emailaddress1,address1_city,websiteurl,numberofemployees,revenue,address1_country,description&$filter=name%20eq%20%27HayrettinCA%27&$top=1
+2026-05-04 10:56:59.458 +03:00 [INF] Sending HTTP request GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts?$select=name,telephone1,emailaddress1,address1_city,websiteurl,numberofemployees,revenue,address1_country,description&$filter=name%20eq%20%27HayrettinCA%27&$top=1
+2026-05-04 10:56:59.724 +03:00 [INF] Received HTTP response headers after 266.302ms - 200
+2026-05-04 10:56:59.724 +03:00 [INF] End processing HTTP request after 266.9137ms - 200
+2026-05-04 10:56:59.725 +03:00 [INF] Query returned 1 record(s) for accounts
+2026-05-04 10:56:59.725 +03:00 [INF] [AUDIT] Tenant= Tool=dynamics_execute_query Duration=268ms Success=true
+2026-05-04 10:56:59.725 +03:00 [INF] "dynamics_execute_query" completed. IsError = false.
+2026-05-04 10:56:59.726 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler completed in 269.0342ms.
+2026-05-04 10:57:57.708 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler called.
+2026-05-04 10:57:57.708 +03:00 [INF] Executing query on accounts for tenant 
+2026-05-04 10:57:57.708 +03:00 [INF] OData GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts?$select=name,address1_city,revenue,address1_country&$top=100
+2026-05-04 10:57:57.708 +03:00 [INF] Start processing HTTP request GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts?$select=name,address1_city,revenue,address1_country&$top=100
+2026-05-04 10:57:57.708 +03:00 [INF] Sending HTTP request GET https://org8799ea1f.crm.dynamics.com/api/data/v9.2/accounts?$select=name,address1_city,revenue,address1_country&$top=100
+2026-05-04 10:57:58.450 +03:00 [INF] Received HTTP response headers after 741.3347ms - 200
+2026-05-04 10:57:58.450 +03:00 [INF] End processing HTTP request after 741.6392ms - 200
+2026-05-04 10:57:58.450 +03:00 [INF] Query returned 7 record(s) for accounts
+2026-05-04 10:57:58.450 +03:00 [INF] [AUDIT] Tenant= Tool=dynamics_execute_query Duration=741ms Success=true
+2026-05-04 10:57:58.450 +03:00 [INF] "dynamics_execute_query" completed. IsError = false.
+2026-05-04 10:57:58.450 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler completed in 742.5081ms.

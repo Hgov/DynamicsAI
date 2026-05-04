@@ -1,0 +1,458 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\tests\\DynamicsAI.Tests\\DynamicsAI.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.Application\\DynamicsAI.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.Application\\DynamicsAI.Application.csproj",
+        "projectName": "DynamicsAI.Application",
+        "projectPath": "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.Application\\DynamicsAI.Application.csproj",
+        "packagesPath": "C:\\Users\\HayrettinGövCrmAkade\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HayrettinGövCrmAkade\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.crmakademi.net/nuget/": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.Domain\\DynamicsAI.Domain.csproj": {
+                "projectPath": "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.Domain\\DynamicsAI.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.310/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.Domain\\DynamicsAI.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.Domain\\DynamicsAI.Domain.csproj",
+        "projectName": "DynamicsAI.Domain",
+        "projectPath": "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.Domain\\DynamicsAI.Domain.csproj",
+        "packagesPath": "C:\\Users\\HayrettinGövCrmAkade\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HayrettinGövCrmAkade\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.crmakademi.net/nuget/": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.310/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.GatewayApi\\DynamicsAI.GatewayApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.GatewayApi\\DynamicsAI.GatewayApi.csproj",
+        "projectName": "DynamicsAI.GatewayApi",
+        "projectPath": "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.GatewayApi\\DynamicsAI.GatewayApi.csproj",
+        "packagesPath": "C:\\Users\\HayrettinGövCrmAkade\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.GatewayApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HayrettinGövCrmAkade\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.crmakademi.net/nuget/": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.Application\\DynamicsAI.Application.csproj": {
+                "projectPath": "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.Application\\DynamicsAI.Application.csproj"
+              },
+              "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.Infrastructure\\DynamicsAI.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.Infrastructure\\DynamicsAI.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            },
+            "MiniExcel": {
+              "target": "Package",
+              "version": "[1.*, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[6.0.*, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[5.0.*, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.9.*, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.310/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.Infrastructure\\DynamicsAI.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.Infrastructure\\DynamicsAI.Infrastructure.csproj",
+        "projectName": "DynamicsAI.Infrastructure",
+        "projectPath": "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.Infrastructure\\DynamicsAI.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\HayrettinGövCrmAkade\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HayrettinGövCrmAkade\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.crmakademi.net/nuget/": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.Application\\DynamicsAI.Application.csproj": {
+                "projectPath": "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.Application\\DynamicsAI.Application.csproj"
+              },
+              "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.Domain\\DynamicsAI.Domain.csproj": {
+                "projectPath": "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.Domain\\DynamicsAI.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            },
+            "MiniExcel": {
+              "target": "Package",
+              "version": "[1.*, )"
+            },
+            "Serilog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.310/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\tests\\DynamicsAI.Tests\\DynamicsAI.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\tests\\DynamicsAI.Tests\\DynamicsAI.Tests.csproj",
+        "projectName": "DynamicsAI.Tests",
+        "projectPath": "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\tests\\DynamicsAI.Tests\\DynamicsAI.Tests.csproj",
+        "packagesPath": "C:\\Users\\HayrettinGövCrmAkade\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\tests\\DynamicsAI.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HayrettinGövCrmAkade\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.crmakademi.net/nuget/": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.Application\\DynamicsAI.Application.csproj": {
+                "projectPath": "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.Application\\DynamicsAI.Application.csproj"
+              },
+              "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.GatewayApi\\DynamicsAI.GatewayApi.csproj": {
+                "projectPath": "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.GatewayApi\\DynamicsAI.GatewayApi.csproj"
+              },
+              "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.Infrastructure\\DynamicsAI.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.Infrastructure\\DynamicsAI.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Data.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.*, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.310/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

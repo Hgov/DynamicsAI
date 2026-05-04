@@ -1,0 +1,47 @@
+2026-05-02 21:34:26.261 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) transport reading messages.
+2026-05-02 21:34:26.316 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-02 21:34:26.317 +03:00 [INF] Hosting environment: Production
+2026-05-02 21:34:26.317 +03:00 [INF] Content root path: C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.McpServer\bin\Debug\net8.0\
+2026-05-02 21:34:26.329 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0) method 'initialize' request handler called.
+2026-05-02 21:34:26.360 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'initialize' request handler completed in 28.0222ms.
+2026-05-02 21:34:26.902 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/list' request handler called.
+2026-05-02 21:34:26.917 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/list' request handler completed in 15.338ms.
+2026-05-02 21:34:38.348 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler called.
+2026-05-02 21:34:38.366 +03:00 [INF] Executing query on contacts for tenant null
+2026-05-02 21:34:38.371 +03:00 [INF] Discovering tenant ID from https://turkonlinetest.crm4.dynamics.com
+2026-05-02 21:34:38.383 +03:00 [INF] Start processing HTTP request GET https://turkonlinetest.crm4.dynamics.com/api/data/v9.2/
+2026-05-02 21:34:38.387 +03:00 [INF] Sending HTTP request GET https://turkonlinetest.crm4.dynamics.com/api/data/v9.2/
+2026-05-02 21:34:41.839 +03:00 [INF] Received HTTP response headers after 3450.5436ms - 401
+2026-05-02 21:34:41.840 +03:00 [INF] End processing HTTP request after 3460.5727ms - 401
+2026-05-02 21:34:41.845 +03:00 [INF] Discovered tenant ID fc0940e1-e86a-47e6-aa2b-f157f7f0d062 for https://turkonlinetest.crm4.dynamics.com
+2026-05-02 21:34:41.847 +03:00 [INF] Acquiring token via ROPC: username=crmadm@turkon.com, clientId=51f81489-12ee-4a9e-aaae-a2591f45987d (well-known=true), tenantId=fc0940e1-e86a-47e6-aa2b-f157f7f0d062
+2026-05-02 21:34:41.849 +03:00 [INF] Start processing HTTP request POST https://login.microsoftonline.com/fc0940e1-e86a-47e6-aa2b-f157f7f0d062/oauth2/v2.0/token
+2026-05-02 21:34:41.849 +03:00 [INF] Sending HTTP request POST https://login.microsoftonline.com/fc0940e1-e86a-47e6-aa2b-f157f7f0d062/oauth2/v2.0/token
+2026-05-02 21:34:42.149 +03:00 [INF] Received HTTP response headers after 299.0891ms - 200
+2026-05-02 21:34:42.149 +03:00 [INF] End processing HTTP request after 299.5985ms - 200
+2026-05-02 21:34:42.150 +03:00 [INF] Token acquired (ROPC), expires in "01:04:25"
+2026-05-02 21:34:42.151 +03:00 [INF] OData GET https://turkonlinetest.crm4.dynamics.com/api/data/v9.2/contacts?$select=fullname,emailaddress1,telephone1,jobtitle&$filter=fullname%20ne%20%27BIRGUL%20COSKUN%27%20and%20fullname%20ne%20%27BURAK%20CELEP%27%20and%20fullname%20ne%20%27BURCU%20PONAT%27&$top=1
+2026-05-02 21:34:42.153 +03:00 [INF] Start processing HTTP request GET https://turkonlinetest.crm4.dynamics.com/api/data/v9.2/contacts?$select=fullname,emailaddress1,telephone1,jobtitle&$filter=fullname%20ne%20%27BIRGUL%20COSKUN%27%20and%20fullname%20ne%20%27BURAK%20CELEP%27%20and%20fullname%20ne%20%27BURCU%20PONAT%27&$top=1
+2026-05-02 21:34:42.153 +03:00 [INF] Sending HTTP request GET https://turkonlinetest.crm4.dynamics.com/api/data/v9.2/contacts?$select=fullname,emailaddress1,telephone1,jobtitle&$filter=fullname%20ne%20%27BIRGUL%20COSKUN%27%20and%20fullname%20ne%20%27BURAK%20CELEP%27%20and%20fullname%20ne%20%27BURCU%20PONAT%27&$top=1
+2026-05-02 21:34:42.464 +03:00 [INF] Received HTTP response headers after 310.6268ms - 200
+2026-05-02 21:34:42.464 +03:00 [INF] End processing HTTP request after 311.0986ms - 200
+2026-05-02 21:34:42.466 +03:00 [INF] Query returned 1 record(s) for contacts
+2026-05-02 21:34:42.466 +03:00 [INF] [AUDIT] Tenant=https://turkonlinetest.crm4.dynamics.com/ Tool=dynamics_execute_query Duration=4100ms Success=true
+2026-05-02 21:34:42.474 +03:00 [INF] "dynamics_execute_query" completed. IsError = false.
+2026-05-02 21:34:42.476 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/call' request handler completed in 4128.0766ms.
+2026-05-02 21:46:29.334 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) transport completed reading messages.
+2026-05-02 21:46:29.340 +03:00 [INF] Application is shutting down...
+2026-05-02 21:46:29.346 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) shutting down.
+2026-05-02 21:46:29.346 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) shut down.
+2026-05-02 23:04:26.096 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) transport reading messages.
+2026-05-02 23:04:26.155 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-02 23:04:26.156 +03:00 [INF] Hosting environment: Production
+2026-05-02 23:04:26.156 +03:00 [INF] Content root path: C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.McpServer\bin\Debug\net8.0\
+2026-05-02 23:04:26.165 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0) method 'initialize' request handler called.
+2026-05-02 23:04:26.188 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/list' request handler called.
+2026-05-02 23:04:26.188 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'initialize' request handler completed in 21.4055ms.
+2026-05-02 23:04:26.198 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/list' request handler completed in 8.9875ms.
+2026-05-02 23:11:02.162 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) transport completed reading messages.
+2026-05-02 23:11:02.168 +03:00 [INF] Application is shutting down...
+2026-05-02 23:11:02.176 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) shutting down.
+2026-05-02 23:11:02.176 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) shut down.

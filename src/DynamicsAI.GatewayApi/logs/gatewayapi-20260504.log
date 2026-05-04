@@ -1,0 +1,167 @@
+2026-05-04 10:49:23.769 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2026-05-04 10:49:23.802 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+    CREATE TABLE IF NOT EXISTS ExportedFiles (
+        Id        TEXT NOT NULL PRIMARY KEY,
+        FilePath  TEXT NOT NULL,
+        Category  TEXT NOT NULL DEFAULT 'export',
+        CreatedAt TEXT NOT NULL
+    )
+2026-05-04 10:49:23.883 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT name FROM pragma_table_info('ExportedFiles')
+2026-05-04 10:49:24.093 +03:00 [INF] Now listening on: http://localhost:5050
+2026-05-04 10:49:24.168 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-04 10:49:24.169 +03:00 [INF] Hosting environment: Development
+2026-05-04 10:49:24.170 +03:00 [INF] Content root path: C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.GatewayApi
+2026-05-04 10:49:26.597 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/ - null null
+2026-05-04 10:49:26.825 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/ - 404 0 null 232.8267ms
+2026-05-04 10:49:26.832 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5050/, Response status code: 404
+2026-05-04 11:06:17.201 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2026-05-04 11:06:17.232 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+    CREATE TABLE IF NOT EXISTS ExportedFiles (
+        Id        TEXT NOT NULL PRIMARY KEY,
+        FilePath  TEXT NOT NULL,
+        Category  TEXT NOT NULL DEFAULT 'export',
+        CreatedAt TEXT NOT NULL
+    )
+2026-05-04 11:06:17.326 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT name FROM pragma_table_info('ExportedFiles')
+2026-05-04 11:06:17.491 +03:00 [INF] Now listening on: http://localhost:5050
+2026-05-04 11:06:17.523 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-04 11:06:17.524 +03:00 [INF] Hosting environment: Development
+2026-05-04 11:06:17.525 +03:00 [INF] Content root path: C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.GatewayApi
+2026-05-04 11:06:19.347 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/ - null null
+2026-05-04 11:06:19.516 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/ - 404 0 null 172.7158ms
+2026-05-04 11:06:19.521 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5050/, Response status code: 404
+2026-05-04 11:06:21.377 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/swagger/index.html - null null
+2026-05-04 11:06:21.456 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/swagger/index.html - 200 null text/html;charset=utf-8 78.8243ms
+2026-05-04 11:06:21.462 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/swagger/index.js - null null
+2026-05-04 11:06:21.464 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-04 11:06:21.465 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/_vs/browserLink - null null
+2026-05-04 11:06:21.474 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/swagger/index.js - 200 null application/javascript;charset=utf-8 12.0077ms
+2026-05-04 11:06:21.476 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - 200 16527 application/javascript; charset=utf-8 12.4192ms
+2026-05-04 11:06:21.523 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/_vs/browserLink - 200 null text/javascript; charset=UTF-8 58.5764ms
+2026-05-04 11:06:21.553 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/swagger/v1/swagger.json - null null
+2026-05-04 11:06:21.562 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.8336ms
+2026-05-04 11:07:47.199 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5050/api/Chat - application/json 603
+2026-05-04 11:07:47.208 +03:00 [INF] CORS policy execution successful.
+2026-05-04 11:07:47.213 +03:00 [INF] Executing endpoint 'DynamicsAI.GatewayApi.Controllers.ChatController.Chat (DynamicsAI.GatewayApi)'
+2026-05-04 11:07:47.231 +03:00 [INF] Route matched with {action = "Chat", controller = "Chat"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Chat(DynamicsAI.GatewayApi.Models.ChatRequest, System.Threading.CancellationToken) on controller DynamicsAI.GatewayApi.Controllers.ChatController (DynamicsAI.GatewayApi).
+2026-05-04 11:07:47.258 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-05-04 11:07:47.270 +03:00 [INF] Executed action DynamicsAI.GatewayApi.Controllers.ChatController.Chat (DynamicsAI.GatewayApi) in 35.1488ms
+2026-05-04 11:07:47.271 +03:00 [INF] Executed endpoint 'DynamicsAI.GatewayApi.Controllers.ChatController.Chat (DynamicsAI.GatewayApi)'
+2026-05-04 11:07:47.272 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5050/api/Chat - 400 null application/problem+json; charset=utf-8 73.3713ms
+2026-05-04 11:07:56.888 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5050/api/Chat - application/json 585
+2026-05-04 11:07:56.891 +03:00 [INF] CORS policy execution successful.
+2026-05-04 11:07:56.892 +03:00 [INF] Executing endpoint 'DynamicsAI.GatewayApi.Controllers.ChatController.Chat (DynamicsAI.GatewayApi)'
+2026-05-04 11:07:56.893 +03:00 [INF] Route matched with {action = "Chat", controller = "Chat"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Chat(DynamicsAI.GatewayApi.Models.ChatRequest, System.Threading.CancellationToken) on controller DynamicsAI.GatewayApi.Controllers.ChatController (DynamicsAI.GatewayApi).
+2026-05-04 11:07:56.898 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-05-04 11:07:56.900 +03:00 [INF] Executed action DynamicsAI.GatewayApi.Controllers.ChatController.Chat (DynamicsAI.GatewayApi) in 5.0519ms
+2026-05-04 11:07:56.901 +03:00 [INF] Executed endpoint 'DynamicsAI.GatewayApi.Controllers.ChatController.Chat (DynamicsAI.GatewayApi)'
+2026-05-04 11:07:56.902 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5050/api/Chat - 400 null application/problem+json; charset=utf-8 14.0242ms
+2026-05-04 11:08:59.835 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5050/api/Chat - application/json 651
+2026-05-04 11:08:59.843 +03:00 [INF] CORS policy execution successful.
+2026-05-04 11:08:59.844 +03:00 [INF] Executing endpoint 'DynamicsAI.GatewayApi.Controllers.ChatController.Chat (DynamicsAI.GatewayApi)'
+2026-05-04 11:08:59.845 +03:00 [INF] Route matched with {action = "Chat", controller = "Chat"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Chat(DynamicsAI.GatewayApi.Models.ChatRequest, System.Threading.CancellationToken) on controller DynamicsAI.GatewayApi.Controllers.ChatController (DynamicsAI.GatewayApi).
+2026-05-04 11:08:59.907 +03:00 [INF] Executing action method DynamicsAI.GatewayApi.Controllers.ChatController.Chat (DynamicsAI.GatewayApi) - Validation state: "Valid"
+2026-05-04 11:08:59.951 +03:00 [INF] Executed action method DynamicsAI.GatewayApi.Controllers.ChatController.Chat (DynamicsAI.GatewayApi), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 40.6648ms.
+2026-05-04 11:08:59.952 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-04 11:08:59.955 +03:00 [INF] Executed action DynamicsAI.GatewayApi.Controllers.ChatController.Chat (DynamicsAI.GatewayApi) in 107.6343ms
+2026-05-04 11:08:59.963 +03:00 [INF] Executed endpoint 'DynamicsAI.GatewayApi.Controllers.ChatController.Chat (DynamicsAI.GatewayApi)'
+2026-05-04 11:08:59.964 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5050/api/Chat - 400 null application/json; charset=utf-8 133.2243ms
+2026-05-04 11:09:10.389 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5050/api/Chat - application/json 633
+2026-05-04 11:09:10.392 +03:00 [INF] CORS policy execution successful.
+2026-05-04 11:09:10.393 +03:00 [INF] Executing endpoint 'DynamicsAI.GatewayApi.Controllers.ChatController.Chat (DynamicsAI.GatewayApi)'
+2026-05-04 11:09:10.394 +03:00 [INF] Route matched with {action = "Chat", controller = "Chat"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Chat(DynamicsAI.GatewayApi.Models.ChatRequest, System.Threading.CancellationToken) on controller DynamicsAI.GatewayApi.Controllers.ChatController (DynamicsAI.GatewayApi).
+2026-05-04 11:09:10.411 +03:00 [INF] Executing action method DynamicsAI.GatewayApi.Controllers.ChatController.Chat (DynamicsAI.GatewayApi) - Validation state: "Valid"
+2026-05-04 11:09:10.548 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__sessionId_0='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."CreatedAt", "t"."LastActivityAt", "t"."Title", "t"."UserId", "m"."Id", "m"."ContentJson", "m"."CreatedAt", "m"."IsToolMessage", "m"."Role", "m"."SessionId"
+FROM (
+    SELECT "s"."Id", "s"."CreatedAt", "s"."LastActivityAt", "s"."Title", "s"."UserId"
+    FROM "Sessions" AS "s"
+    WHERE "s"."Id" = @__sessionId_0
+    LIMIT 1
+) AS "t"
+LEFT JOIN "Messages" AS "m" ON "t"."Id" = "m"."SessionId"
+ORDER BY "t"."Id", "m"."CreatedAt"
+2026-05-04 11:09:10.609 +03:00 [INF] Start processing HTTP request POST https://api.anthropic.com/v1/messages
+2026-05-04 11:09:10.611 +03:00 [INF] Sending HTTP request POST https://api.anthropic.com/v1/messages
+2026-05-04 11:09:13.710 +03:00 [INF] Received HTTP response headers after 3097.1439ms - 200
+2026-05-04 11:09:13.711 +03:00 [INF] End processing HTTP request after 3103.0811ms - 200
+2026-05-04 11:09:13.759 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."CreatedAt", "s"."LastActivityAt", "s"."Title", "s"."UserId"
+FROM "Sessions" AS "s"
+WHERE "s"."Id" = @__p_0
+LIMIT 1
+2026-05-04 11:09:13.823 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 34), @p1='?' (DbType = DateTime), @p2='?' (DbType = Boolean), @p3='?' (Size = 4), @p4='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Messages" ("ContentJson", "CreatedAt", "IsToolMessage", "Role", "SessionId")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2026-05-04 11:09:13.832 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 535), @p1='?' (DbType = DateTime), @p2='?' (DbType = Boolean), @p3='?' (Size = 9), @p4='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Messages" ("ContentJson", "CreatedAt", "IsToolMessage", "Role", "SessionId")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2026-05-04 11:09:13.835 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p1='?' (Size = 6), @p0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Sessions" SET "LastActivityAt" = @p0
+WHERE "Id" = @p1
+RETURNING 1;
+2026-05-04 11:09:13.848 +03:00 [INF] Executed action method DynamicsAI.GatewayApi.Controllers.ChatController.Chat (DynamicsAI.GatewayApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3435.7501ms.
+2026-05-04 11:09:13.850 +03:00 [INF] Executing OkObjectResult, writing value of type 'DynamicsAI.GatewayApi.Models.ChatResponse'.
+2026-05-04 11:09:13.852 +03:00 [INF] Executed action DynamicsAI.GatewayApi.Controllers.ChatController.Chat (DynamicsAI.GatewayApi) in 3456.0622ms
+2026-05-04 11:09:13.853 +03:00 [INF] Executed endpoint 'DynamicsAI.GatewayApi.Controllers.ChatController.Chat (DynamicsAI.GatewayApi)'
+2026-05-04 11:09:13.856 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5050/api/Chat - 200 null application/json; charset=utf-8 3467.0928ms
+2026-05-04 11:09:21.233 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5050/api/Chat - application/json 627
+2026-05-04 11:09:21.237 +03:00 [INF] CORS policy execution successful.
+2026-05-04 11:09:21.238 +03:00 [INF] Executing endpoint 'DynamicsAI.GatewayApi.Controllers.ChatController.Chat (DynamicsAI.GatewayApi)'
+2026-05-04 11:09:21.239 +03:00 [INF] Route matched with {action = "Chat", controller = "Chat"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Chat(DynamicsAI.GatewayApi.Models.ChatRequest, System.Threading.CancellationToken) on controller DynamicsAI.GatewayApi.Controllers.ChatController (DynamicsAI.GatewayApi).
+2026-05-04 11:09:21.258 +03:00 [INF] Executing action method DynamicsAI.GatewayApi.Controllers.ChatController.Chat (DynamicsAI.GatewayApi) - Validation state: "Valid"
+2026-05-04 11:09:21.260 +03:00 [INF] Start processing HTTP request POST https://api.anthropic.com/v1/messages
+2026-05-04 11:09:21.261 +03:00 [INF] Sending HTTP request POST https://api.anthropic.com/v1/messages
+2026-05-04 11:09:21.453 +03:00 [INF] Received HTTP response headers after 191.2005ms - 400
+2026-05-04 11:09:21.456 +03:00 [INF] End processing HTTP request after 195.4576ms - 400
+2026-05-04 11:09:21.457 +03:00 [ERR] Claude API hatası 400: {"type":"error","error":{"type":"invalid_request_error","message":"messages.6: user messages must have non-empty content"},"request_id":"req_011CahBs4stje9WWTnqMfrf1"}
+2026-05-04 11:09:21.536 +03:00 [ERR] Chat isteği başarısız
+System.Exception: Claude API hatası HTTP 400: {"type":"error","error":{"type":"invalid_request_error","message":"messages.6: user messages must have non-empty content"},"request_id":"req_011CahBs4stje9WWTnqMfrf1"}
+   at DynamicsAI.GatewayApi.Services.ClaudeAgentService.SendMessageAsync(String sessionId, String userId, String userMessage, TenantContext tenantContext, String anthropicApiKey, String modelOverride, JsonNode fileBlock, String fileSummary, CancellationToken ct) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.GatewayApi\Services\ClaudeAgentService.cs:line 114
+   at DynamicsAI.GatewayApi.Controllers.ChatController.Chat(ChatRequest request, CancellationToken ct) in C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.GatewayApi\Controllers\ChatController.cs:line 54
+2026-05-04 11:09:21.565 +03:00 [INF] Executed action method DynamicsAI.GatewayApi.Controllers.ChatController.Chat (DynamicsAI.GatewayApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 305.7859ms.
+2026-05-04 11:09:21.566 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-04 11:09:21.567 +03:00 [INF] Executed action DynamicsAI.GatewayApi.Controllers.ChatController.Chat (DynamicsAI.GatewayApi) in 324.2511ms
+2026-05-04 11:09:21.569 +03:00 [INF] Executed endpoint 'DynamicsAI.GatewayApi.Controllers.ChatController.Chat (DynamicsAI.GatewayApi)'
+2026-05-04 11:09:21.570 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5050/api/Chat - 500 null application/json; charset=utf-8 337.2411ms
+2026-05-04 11:09:35.505 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5050/api/Chat - application/json 643
+2026-05-04 11:09:35.510 +03:00 [INF] CORS policy execution successful.
+2026-05-04 11:09:35.510 +03:00 [INF] Executing endpoint 'DynamicsAI.GatewayApi.Controllers.ChatController.Chat (DynamicsAI.GatewayApi)'
+2026-05-04 11:09:35.511 +03:00 [INF] Route matched with {action = "Chat", controller = "Chat"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Chat(DynamicsAI.GatewayApi.Models.ChatRequest, System.Threading.CancellationToken) on controller DynamicsAI.GatewayApi.Controllers.ChatController (DynamicsAI.GatewayApi).
+2026-05-04 11:09:35.525 +03:00 [INF] Executing action method DynamicsAI.GatewayApi.Controllers.ChatController.Chat (DynamicsAI.GatewayApi) - Validation state: "Valid"
+2026-05-04 11:09:35.527 +03:00 [INF] Start processing HTTP request POST https://api.anthropic.com/v1/messages
+2026-05-04 11:09:35.528 +03:00 [INF] Sending HTTP request POST https://api.anthropic.com/v1/messages
+2026-05-04 11:09:38.327 +03:00 [INF] Received HTTP response headers after 2798.1185ms - 200
+2026-05-04 11:09:38.328 +03:00 [INF] End processing HTTP request after 2801.4224ms - 200
+2026-05-04 11:09:38.333 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."CreatedAt", "s"."LastActivityAt", "s"."Title", "s"."UserId"
+FROM "Sessions" AS "s"
+WHERE "s"."Id" = @__p_0
+LIMIT 1
+2026-05-04 11:09:38.335 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 28), @p1='?' (DbType = DateTime), @p2='?' (DbType = Boolean), @p3='?' (Size = 4), @p4='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Messages" ("ContentJson", "CreatedAt", "IsToolMessage", "Role", "SessionId")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2026-05-04 11:09:38.337 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 44), @p1='?' (DbType = DateTime), @p2='?' (DbType = Boolean), @p3='?' (Size = 4), @p4='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Messages" ("ContentJson", "CreatedAt", "IsToolMessage", "Role", "SessionId")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2026-05-04 11:09:38.340 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 705), @p1='?' (DbType = DateTime), @p2='?' (DbType = Boolean), @p3='?' (Size = 9), @p4='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Messages" ("ContentJson", "CreatedAt", "IsToolMessage", "Role", "SessionId")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2026-05-04 11:09:38.341 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p1='?' (Size = 6), @p0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Sessions" SET "LastActivityAt" = @p0
+WHERE "Id" = @p1
+RETURNING 1;
+2026-05-04 11:09:38.345 +03:00 [INF] Executed action method DynamicsAI.GatewayApi.Controllers.ChatController.Chat (DynamicsAI.GatewayApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2818.473ms.
+2026-05-04 11:09:38.346 +03:00 [INF] Executing OkObjectResult, writing value of type 'DynamicsAI.GatewayApi.Models.ChatResponse'.
+2026-05-04 11:09:38.347 +03:00 [INF] Executed action DynamicsAI.GatewayApi.Controllers.ChatController.Chat (DynamicsAI.GatewayApi) in 2833.795ms
+2026-05-04 11:09:38.348 +03:00 [INF] Executed endpoint 'DynamicsAI.GatewayApi.Controllers.ChatController.Chat (DynamicsAI.GatewayApi)'
+2026-05-04 11:09:38.349 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5050/api/Chat - 200 null application/json; charset=utf-8 2844.0782ms

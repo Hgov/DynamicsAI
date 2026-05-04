@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "dynamicsai": {
+      "command": "dotnet",
+      "args": [
+        "run",
+        "--project",
+        "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.McpServer\\DynamicsAI.McpServer.csproj"
+      ]
+    }
+  }
+}

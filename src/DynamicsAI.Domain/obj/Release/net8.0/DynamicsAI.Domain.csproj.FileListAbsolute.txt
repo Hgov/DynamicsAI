@@ -1,0 +1,11 @@
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Domain\bin\Release\net8.0\DynamicsAI.Domain.deps.json
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Domain\bin\Release\net8.0\DynamicsAI.Domain.dll
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Domain\bin\Release\net8.0\DynamicsAI.Domain.pdb
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Domain\obj\Release\net8.0\DynamicsAI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Domain\obj\Release\net8.0\DynamicsAI.Domain.AssemblyInfoInputs.cache
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Domain\obj\Release\net8.0\DynamicsAI.Domain.AssemblyInfo.cs
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Domain\obj\Release\net8.0\DynamicsAI.Domain.csproj.CoreCompileInputs.cache
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Domain\obj\Release\net8.0\DynamicsAI.Domain.dll
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Domain\obj\Release\net8.0\refint\DynamicsAI.Domain.dll
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Domain\obj\Release\net8.0\DynamicsAI.Domain.pdb
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Domain\obj\Release\net8.0\ref\DynamicsAI.Domain.dll

@@ -74,6 +74,7 @@ C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.GatewayApi
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.GatewayApi\obj\Debug\net8.0\DynamicsAI.GatewayApi.csproj.CoreCompileInputs.cache
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.GatewayApi\obj\Debug\net8.0\DynamicsAI.GatewayApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.GatewayApi\obj\Debug\net8.0\DynamicsAI.GatewayApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.GatewayApi\obj\Debug\net8.0\DynamicsAI.GatewayApi.sourcelink.json
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.GatewayApi\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.GatewayApi\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.GatewayApi\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
@@ -82,10 +83,10 @@ C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.GatewayApi
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.GatewayApi\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.GatewayApi\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.GatewayApi\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.GatewayApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.GatewayApi\obj\Debug\net8.0\Dynamics.0BC3D57D.Up2Date
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.GatewayApi\obj\Debug\net8.0\DynamicsAI.GatewayApi.dll
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.GatewayApi\obj\Debug\net8.0\refint\DynamicsAI.GatewayApi.dll
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.GatewayApi\obj\Debug\net8.0\DynamicsAI.GatewayApi.pdb
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.GatewayApi\obj\Debug\net8.0\DynamicsAI.GatewayApi.genruntimeconfig.cache
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.GatewayApi\obj\Debug\net8.0\ref\DynamicsAI.GatewayApi.dll
-C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.GatewayApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

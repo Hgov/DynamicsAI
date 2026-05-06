@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DynamicsAI</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <button class="btn-new-chat" id="btnNew">+ Yeni Sohbet</button>
+        </div>
+        <div class="sessions-list" id="sessionsList"></div>
+        <div class="sidebar-footer">
+            <button class="btn-settings" id="btnSettings">⚙ Ayarlar</button>
+        </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+        <header class="chat-header">
+            <span class="chat-title" id="chatTitle">DynamicsAI</span>
+            <span class="model-badge" id="modelBadge">claude-sonnet-4-6</span>
+        </header>
+        <div class="config-banner" id="configBanner">
+            ⚠ Yapılandırma eksik — lütfen
+            <a onclick="App.openSettings()">ayarları</a> tamamlayın.
+        </div>
+        <div class="messages" id="messages">
+            <div class="welcome" id="welcomeMsg">
+                <h2>DynamicsAI'ye Hoşgeldiniz</h2>
+                <p>Dynamics 365 verilerinizi sorgulamak, analiz etmek ve Excel'e aktarmak için benimle konuşun.</p>
+            </div>
+        </div>
+        <div class="input-area">
+            <div class="file-preview" id="filePreview">
+                <span>📎</span>
+                <span class="file-preview-name" id="fileName"></span>
+                <button class="file-remove" id="btnRemove" title="Dosyayı kaldır">×</button>
+            </div>
+            <div class="input-row">
+                <button class="btn-attach" id="btnAttach" title="Dosya ekle">📎</button>
+                <textarea id="msgInput" rows="1" placeholder="Mesajınızı yazın… (Gönder: Enter | Yeni satır: Shift+Enter)"></textarea>
+                <button class="btn-send" id="btnSend">Gönder</button>
+            </div>
+            <div class="input-hint">Enter: gönder &nbsp;·&nbsp; Shift+Enter: yeni satır</div>
+        </div>
+    </main>
+</div>
+
+<!-- SETTINGS MODAL -->
+<div class="overlay" id="settingsOverlay">
+    <div class="modal">
+        <div class="modal-head">
+            <span class="modal-head-title">⚙ Ayarlar</span>
+            <button class="modal-close" id="btnCloseModal">×</button>
+        </div>
+        <div class="modal-body">
+            <div class="section-label">Gateway API</div>
+            <div class="fgroup">
+                <label class="flabel">Gateway URL</label>
+                <input class="finput" id="cfgGateway" type="url" placeholder="http://localhost:5050">
+            </div>
+            <div class="fgroup">
+                <label class="flabel">Anthropic API Key</label>
+                <input class="finput" id="cfgApiKey" type="password" placeholder="sk-ant-…">
+            </div>
+            <div class="fgroup">
+                <label class="flabel">Model</label>
+                <select class="fselect" id="cfgModel">
+                    <option value="claude-sonnet-4-6">Claude Sonnet 4.6</option>
+                    <option value="claude-opus-4-7">Claude Opus 4.7</option>
+                    <option value="claude-haiku-4-5-20251001">Claude Haiku 4.5</option>
+                </select>
+            </div>
+            <div class="fgroup">
+                <label class="flabel">Kullanıcı ID</label>
+                <input class="finput" id="cfgUserId" type="text" placeholder="user@domain.com">
+                <div class="fhint">Dynamics oturumunda otomatik dolar</div>
+            </div>
+
+            <div class="section-label">Dynamics 365 Bağlantısı</div>
+            <div class="fgroup">
+                <label class="flabel">Deployment Türü</label>
+                <select class="fselect" id="cfgDeploy">
+                    <option value="Online">Online</option>
+                    <option value="OnPrem">On-Premise</option>
+                </select>
+            </div>
+            <div class="fgroup">
+                <label class="flabel">Dynamics URL</label>
+                <input class="finput" id="cfgDynUrl" type="url" placeholder="https://org.crm4.dynamics.com">
+                <div class="fhint">Dynamics oturumunda otomatik dolar</div>
+            </div>
+            <div class="fgroup">
+                <label class="flabel">Tenant ID <span style="color:var(--text-dim)">(opsiyonel)</span></label>
+                <input class="finput" id="cfgTenant" type="text" placeholder="auto-discovery">
+            </div>
+            <div class="fgroup">
+                <label class="flabel">Client ID <span style="color:var(--text-dim)">(opsiyonel)</span></label>
+                <input class="finput" id="cfgClientId" type="text" placeholder="well-known default">
+            </div>
+            <div class="fgroup">
+                <label class="flabel">Client Secret <span style="color:var(--text-dim)">(opsiyonel)</span></label>
+                <input class="finput" id="cfgSecret" type="password">
+            </div>
+            <div class="fgroup">
+                <label class="flabel">Kullanıcı Adı (ROPC)</label>
+                <input class="finput" id="cfgUser" type="text" placeholder="user@org.onmicrosoft.com">
+            </div>
+            <div class="fgroup">
+                <label class="flabel">Parola (ROPC)</label>
+                <input class="finput" id="cfgPass" type="password">
+            </div>
+        </div>
+        <div class="modal-foot">
+            <button class="btn-cancel" id="btnCancelModal">İptal</button>
+            <button class="btn-ok" id="btnSaveModal">Kaydet</button>
+        </div>
+    </div>
+</div>
+
+<!-- HIDDEN FILE INPUT -->
+<input type="file" id="fileInput" style="display:none"
+    accept=".xlsx,.pdf,.csv,.txt,.json,.xml,.jpg,.jpeg,.png,.gif,.webp">
+
+<!-- DROP OVERLAY -->
+<div class="drop-zone" id="dropZone">
+    <div class="drop-label">📎 Dosyayı bırakın</div>
+</div>
+
+<!-- TOAST -->
+<div id="toast"></div>
+
+<script src="chat.js"></script>
+</body>
+</html>

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DynamicsAI.McpServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7dd0c410688bf7d1b7dfb9d244e1ea0e747b7ef5")]
 [assembly: System.Reflection.AssemblyProductAttribute("DynamicsAI.McpServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DynamicsAI.McpServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

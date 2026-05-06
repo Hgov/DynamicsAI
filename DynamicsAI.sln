@@ -19,6 +19,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicsAI.Tests", "tests\D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicsAI.GatewayApi", "src\DynamicsAI.GatewayApi\DynamicsAI.GatewayApi.csproj", "{F1CE5C94-A39C-44FF-9798-DEF461F96165}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "webresource", "webresource", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		webresource\chat.css = webresource\chat.css
+		webresource\chat.html = webresource\chat.html
+		webresource\chat.js = webresource\chat.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution", "solution", "{6A1CC8EF-EE6F-47D9-BC03-5F13EE993C96}"
+	ProjectSection(SolutionItems) = preProject
+		solution\customizations.xml = solution\customizations.xml
+		solution\solution.xml = solution\solution.xml
+		solution\[Content_Types].xml = solution\[Content_Types].xml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -21,7 +21,10 @@ try
     // JSON body'de base64 dosya (~20 MB raw → ~27 MB base64) için body limit artırıldı
     builder.WebHost.ConfigureKestrel(k => k.Limits.MaxRequestBodySize = 30 * 1024 * 1024);
 
-    builder.Services.AddControllers();
+    builder.Services.AddControllers()
+        .AddJsonOptions(opts =>
+            opts.JsonSerializerOptions.Converters.Add(
+                new System.Text.Json.Serialization.JsonStringEnumConverter()));
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen(c =>
         c.SwaggerDoc("v1", new() { Title = "DynamicsAI Gateway API", Version = "v1" }));

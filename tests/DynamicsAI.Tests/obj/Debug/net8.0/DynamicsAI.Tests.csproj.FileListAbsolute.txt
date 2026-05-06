@@ -162,6 +162,7 @@ C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\tests\DynamicsAI.Tests\ob
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\tests\DynamicsAI.Tests\obj\Debug\net8.0\DynamicsAI.Tests.AssemblyInfoInputs.cache
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\tests\DynamicsAI.Tests\obj\Debug\net8.0\DynamicsAI.Tests.AssemblyInfo.cs
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\tests\DynamicsAI.Tests\obj\Debug\net8.0\DynamicsAI.Tests.csproj.CoreCompileInputs.cache
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\tests\DynamicsAI.Tests\obj\Debug\net8.0\DynamicsAI.Tests.sourcelink.json
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\tests\DynamicsAI.Tests\obj\Debug\net8.0\Dynamics.29421223.Up2Date
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\tests\DynamicsAI.Tests\obj\Debug\net8.0\DynamicsAI.Tests.dll
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\tests\DynamicsAI.Tests\obj\Debug\net8.0\refint\DynamicsAI.Tests.dll

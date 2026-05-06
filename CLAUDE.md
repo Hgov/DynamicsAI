@@ -293,10 +293,10 @@ Sonuç kullanıcıya döner
 - `Messages`: Id | SessionId | Role | ContentJson | CreatedAt
 - `ExportedFiles`: Id (GUID) | FilePath | Category | CreatedAt
 
-### ⬜ FAZ 5 — WebResource (Dynamics UI)
-- [ ] HTML/JS chat arayüzü
-- [ ] `ai_configuration` custom entity
-- [ ] Solution paketi (.zip)
+### 🔄 FAZ 5 — WebResource (Dynamics UI)
+- [x] HTML/JS chat arayüzü — `webresource/chat.html` + `chat.css` + `chat.js` (ayrı dosyalar)
+- [x] `ai_configuration` custom entity — `solution/customizations.xml` (12 alan, form, 2 view)
+- [ ] Solution paketi (.zip) — dosyaları ZIP'e paketleme
 
 ---
 
@@ -329,6 +329,8 @@ Sonuç kullanıcıya döner
 - `[2026-05-03]` — Excel export eklendi: dynamics_export_to_excel (McpServer + GatewayApi), MiniExcel streaming, ExportedFileRegistry SQLite kalıcı, GET /api/files/{fileId}.
 - `[2026-05-03]` — Dosya yükleme eklendi: base64 JSON (FileAttachment), FileProcessingService, multipart/Swagger çakışması giderildi. Token taşması koruması (MaxTextBlockChars=200k, MaxExcelRows=200). Turn boundary bug düzeltildi.
 - `[2026-05-03]` — Dosya kalıcılığı eklendi: yüklenen dosyalar files/uploads/, exportlar files/exports/ klasörüne kaydedilir. ExportedFileRegistry Category alanı eklendi. GET /api/files?category= liste endpoint'i. StorageOptions singleton. SQLite migration pragma_table_info ile güvenli hale getirildi.
+- `[2026-05-05]` — FAZ 5 kısmen: WebResource HTML/JS chat arayüzü oluşturuldu. CSS ve JS ayrı dosyalara bölündü (`webresource/chat.html` + `chat.css` + `chat.js`).
+- `[2026-05-05]` — `crmakad_ai_configuration` entity tanımı oluşturuldu (`solution/customizations.xml`). 12 alan (nvarchar, bit, picklist), 1 main form (3 section), 2 view (active + quick find). `chat.js` Xrm.WebApi ile entity'den config yüklüyor (isdefault=true kaydı); Xrm yoksa localStorage fallback.
 
 ---
 

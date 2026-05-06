@@ -1,0 +1,12 @@
+2026-05-05 11:50:49.476 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) transport reading messages.
+2026-05-05 11:50:49.542 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-05 11:50:49.543 +03:00 [INF] Hosting environment: Production
+2026-05-05 11:50:49.543 +03:00 [INF] Content root path: C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.McpServer\bin\Debug\net8.0\
+2026-05-05 11:50:49.550 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0) method 'initialize' request handler called.
+2026-05-05 11:50:49.572 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'initialize' request handler completed in 19.2752ms.
+2026-05-05 11:50:49.670 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/list' request handler called.
+2026-05-05 11:50:49.678 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-ai 0.1.0) method 'tools/list' request handler completed in 7.3991ms.
+2026-05-05 14:07:10.454 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) transport completed reading messages.
+2026-05-05 14:07:10.463 +03:00 [INF] Application is shutting down...
+2026-05-05 14:07:10.470 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) shutting down.
+2026-05-05 14:07:10.470 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) shut down.

@@ -5,6 +5,7 @@ C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Domain\obj
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Domain\obj\Debug\net8.0\DynamicsAI.Domain.AssemblyInfoInputs.cache
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Domain\obj\Debug\net8.0\DynamicsAI.Domain.AssemblyInfo.cs
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Domain\obj\Debug\net8.0\DynamicsAI.Domain.csproj.CoreCompileInputs.cache
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Domain\obj\Debug\net8.0\DynamicsAI.Domain.sourcelink.json
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Domain\obj\Debug\net8.0\DynamicsAI.Domain.dll
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Domain\obj\Debug\net8.0\refint\DynamicsAI.Domain.dll
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Domain\obj\Debug\net8.0\DynamicsAI.Domain.pdb

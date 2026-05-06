@@ -10,6 +10,7 @@ C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastruc
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\obj\Debug\net8.0\DynamicsAI.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\obj\Debug\net8.0\DynamicsAI.Infrastructure.AssemblyInfo.cs
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\obj\Debug\net8.0\DynamicsAI.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\obj\Debug\net8.0\DynamicsAI.Infrastructure.sourcelink.json
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\obj\Debug\net8.0\Dynamics.CAE44089.Up2Date
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\obj\Debug\net8.0\DynamicsAI.Infrastructure.dll
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.Infrastructure\obj\Debug\net8.0\refint\DynamicsAI.Infrastructure.dll

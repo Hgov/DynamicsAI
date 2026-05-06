@@ -196,11 +196,10 @@
       },
       "DeploymentType": {
         "enum": [
-          0,
-          1
+          "Online",
+          "OnPrem"
         ],
-        "type": "integer",
-        "format": "int32"
+        "type": "string"
       },
       "FileAttachment": {
         "type": "object",

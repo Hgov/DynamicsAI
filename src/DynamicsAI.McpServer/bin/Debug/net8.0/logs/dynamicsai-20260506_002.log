@@ -1,0 +1,18 @@
+2026-05-06 14:03:34.061 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) transport reading messages.
+2026-05-06 14:03:34.113 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-06 14:03:34.114 +03:00 [INF] Hosting environment: Production
+2026-05-06 14:03:34.114 +03:00 [INF] Content root path: C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.McpServer\bin\Debug\net8.0\
+2026-05-06 14:03:34.127 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0) method 'initialize' request handler called.
+2026-05-06 14:03:34.150 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-code 2.1.131) method 'tools/list' request handler called.
+2026-05-06 14:03:34.152 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-code 2.1.131) method 'initialize' request handler completed in 23.0931ms.
+2026-05-06 14:03:34.157 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-code 2.1.131) method 'tools/list' request handler completed in 6.1848ms.
+2026-05-06 14:08:12.205 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) transport completed reading messages.
+2026-05-06 14:08:16.884 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) transport reading messages.
+2026-05-06 14:08:16.930 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-06 14:08:16.930 +03:00 [INF] Hosting environment: Production
+2026-05-06 14:08:16.930 +03:00 [INF] Content root path: C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.McpServer\bin\Debug\net8.0\
+2026-05-06 14:08:16.945 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0) method 'initialize' request handler called.
+2026-05-06 14:08:16.971 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-code 2.1.131) method 'tools/list' request handler called.
+2026-05-06 14:08:16.974 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-code 2.1.131) method 'initialize' request handler completed in 26.5211ms.
+2026-05-06 14:08:16.978 +03:00 [INF] Server (DynamicsAI.McpServer 1.0.0.0), Client (claude-code 2.1.131) method 'tools/list' request handler completed in 6.2329ms.
+2026-05-06 17:01:33.231 +03:00 [INF] Server (stream) (DynamicsAI.McpServer) transport completed reading messages.

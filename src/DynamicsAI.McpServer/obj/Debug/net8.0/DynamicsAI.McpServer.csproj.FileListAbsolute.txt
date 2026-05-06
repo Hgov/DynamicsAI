@@ -66,6 +66,7 @@ C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.McpServer\
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.McpServer\obj\Debug\net8.0\DynamicsAI.McpServer.AssemblyInfoInputs.cache
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.McpServer\obj\Debug\net8.0\DynamicsAI.McpServer.AssemblyInfo.cs
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.McpServer\obj\Debug\net8.0\DynamicsAI.McpServer.csproj.CoreCompileInputs.cache
+C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.McpServer\obj\Debug\net8.0\DynamicsAI.McpServer.sourcelink.json
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.McpServer\obj\Debug\net8.0\Dynamics.F35F5876.Up2Date
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.McpServer\obj\Debug\net8.0\DynamicsAI.McpServer.dll
 C:\Users\HayrettinGövCrmAkade\source\repos\DynamicsAI\src\DynamicsAI.McpServer\obj\Debug\net8.0\refint\DynamicsAI.McpServer.dll

@@ -26,13 +26,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "webresource", "webresource"
 		webresource\chat.js = webresource\chat.js
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution", "solution", "{6A1CC8EF-EE6F-47D9-BC03-5F13EE993C96}"
-	ProjectSection(SolutionItems) = preProject
-		solution\customizations.xml = solution\customizations.xml
-		solution\solution.xml = solution\solution.xml
-		solution\[Content_Types].xml = solution\[Content_Types].xml
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

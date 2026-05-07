@@ -5,7 +5,7 @@
       "args": [
         "run",
         "--project",
-        "C:\\Users\\HayrettinGövCrmAkade\\source\\repos\\DynamicsAI\\src\\DynamicsAI.McpServer\\DynamicsAI.McpServer.csproj"
+        "<dynamicsai folder path>\\DynamicsAI\\src\\DynamicsAI.McpServer\\DynamicsAI.McpServer.csproj"
       ]
     }
   }
